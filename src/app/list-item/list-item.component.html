@@ -1,0 +1,7 @@
+<li [ngClass]="{'arrowDown': data?.children?.length, 'dot': !(data?.children?.length) }" (click)="clicked($event)">
+    {{data?.name}}
+    <ul *ngIf="data?.children?.length">
+        <app-list-item [ngClass]="{ 'hideChildren': click }" [data]="child" [id]="child?.id" *ngFor="let child of data?.children">
+        </app-list-item>
+    </ul>
+</li>
