@@ -1,0 +1,25 @@
+html, body, .main {
+    height: 100%;
+    width: 100%;
+}
+
+.arrowDown::before {
+    content: '⬇️';
+}
+
+.arrowSide::before {
+    content: '➡️';
+    text-decoration: none;
+}
+
+.dot::before {
+    content: '⚈';
+}
+
+li {
+    list-style-type: none;
+}
+
+.hideChildren {
+    display: none;
+}
