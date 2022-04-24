@@ -1,0 +1,10 @@
+<div class="main">
+    <ul *ngIf="data?.length else noData">
+        <app-list-item [data]="itm" [id]="itm?.id" *ngFor="let itm of data">
+        </app-list-item>
+    </ul>
+</div>
+
+<ng-template #noData>
+    <p>Woops! No data.</p>
+</ng-template>
